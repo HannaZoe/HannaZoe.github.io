@@ -26,9 +26,12 @@ a:hover {
 }
 
 .avatar {
-    border-radius: 50%;
-    width: 140px;
+  border-radius: 0;       /* square edges */
+  width: 250px;           /* consistent size */
+  height: 250px;          /* forces square */
+  object-fit: cover;      /* crops nicely */
 }
+
 
 .icons {
     list-style-type: none;
